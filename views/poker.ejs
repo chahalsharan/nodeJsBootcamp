@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome <%= playerName %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="http://code.jquery.com/jquery-1.9.1.js">
+    </script>
+  </head>
+  <body>
+    <h1>Welcome <%= playerName %></h1>
+    <h2>Table (<%= pokerGame.getPlayersCount() %>)</h2>
+    <% for(var i=0; i<pokerGame.getPlayersCount(); i++){ %>
+    	<h6><%= pokerGame.getPlayer(i).getName() %></h6>
+    <% } %>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="http://code.jquery.com/jquery-1.9.1.js">
+    </script>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <h3><%= error %></h3>
+    <p>Welcome to <%= title %></p>
+    <form action="/" method="post">
+      <p>Please Enter Your name to Join the Game </p>
+      <p><input type="text" id="playerName" name="playerName"><input type="submit" id="joinPokerGame"</p>
+    </form>
+    <script>
+	    (function($){
+	    	// $("#joinPokerGame").on("click", function(){
+	    	// 	alert("Hello");
+	    	// });
+	    })(jQuery)
+    </script>
+  </body>
+</html>
